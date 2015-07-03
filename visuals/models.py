@@ -1,9 +1,5 @@
 from django.db import models
-#And whatever else
-# Create your models here.
 
-from django.db import models
-#And whatever else
 # Create your models here.
 
 class Country(models.Model):
@@ -20,7 +16,7 @@ class City(models.Model):
     id = models.IntegerField(primary_key = True)
     name = models.CharField(max_length = 30)
     a_name = models.CharField(max_length = 20)
-    country = models.ForeignKey(Country, default = 0)
+    country_id = models.ForeignKey(Country, default = 0)
     
 class Date_Info(models.Model):
     date_time = models.DateTimeField(default = '2013-04-04 08:32:15')
@@ -70,4 +66,3 @@ class Booking(models.Model):
     search_result = models.ForeignKey(Search_Result, default = 0)
     total_value = models.DecimalField(null = True, max_digits=10, decimal_places=2)
     site = models.ForeignKey(Site, default = 0)
-    
