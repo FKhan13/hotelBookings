@@ -98,7 +98,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC+02:00'
+TIME_ZONE = 'Africa/Johannesburg'
 
 USE_I18N = True
 
